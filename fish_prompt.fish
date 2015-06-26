@@ -31,19 +31,19 @@
 # => Key bindings
 ###############################################################################
 
-if [ $fish_key_bindings = 'fish_vi_key_bindings' ]
-  bind '#' __budspencer_toggle_symbols
-  bind -M visual '#' __budspencer_toggle_symbols
-  bind ' ' __budspencer_toggle_pwd
-  bind -M visual ' ' __budspencer_toggle_pwd
-  bind L __budspencer_cd_next
-  bind H __budspencer_cd_prev
-  bind m mark
-  bind M unmark
-  bind . __budspencer_edit_commandline
-  bind -M insert \n __budspencer_preexec
-  bind \n __budspencer_preexec
-end
+#if [ $fish_key_bindings = 'fish_vi_key_bindings' ]
+#  bind '#' __budspencer_toggle_symbols
+#  bind -M visual '#' __budspencer_toggle_symbols
+#  bind ' ' __budspencer_toggle_pwd
+#  bind -M visual ' ' __budspencer_toggle_pwd
+#  bind L __budspencer_cd_next
+#  bind H __budspencer_cd_prev
+#  bind m mark
+#  bind M unmark
+#  bind . __budspencer_edit_commandline
+#  bind -M insert \n __budspencer_preexec
+#  bind \n __budspencer_preexec
+#end
 
 ###############################################################################
 # => Files
@@ -222,7 +222,7 @@ function __budspencer_create_cmd_hist -e fish_prompt -d 'Create command history 
       set $cmd_hist $$cmd_hist $cmd
     end
   end
-  set fish_bind_mode insert
+#  set fish_bind_mode insert
   echo -n \a
 end
 
